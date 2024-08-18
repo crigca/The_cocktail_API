@@ -1,0 +1,179 @@
+/* Estilo para el encabezado */
+#title {
+  text-align: center;
+  width: 100%;
+}
+/* Estilo para el contenedor principal que utiliza CSS Grid */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 90px auto auto auto 80px;
+  gap: 8px;
+}
+/* Estilo para la sección del encabezado (div1) */
+.div1 {
+  grid-column: 1 / span 6;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #007bff;
+  border-radius: 10px;
+}
+/* Estilo para la sección del encabezado (div1) */
+.div2 {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 3;
+  min-height: 700px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* Estilo para la sección de bebidas aleatorias (div3) */
+.div3 {
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 3;
+  grid-row-start: 2;
+  min-height: 700px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* Estilo para los contenedores de botones en cada sección */
+#button-container-2,
+#button-container-3,
+#button-container-4 {
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* Estilo para los botones en cada sección */
+#button-container-2 button,
+#button-container-3 button,
+#button-container-4 button {
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+/* Estilo para los botones al pasar el mouse por encima */
+#button-container-2 button:hover,
+#button-container-3 button:hover,
+#button-container-4 button:hover {
+  background-color: #0056b3;
+}
+/* Estilo para los contenedores de información de las bebidas */
+#drink-info-container-2,
+#drink-info-container-3,
+#drink-info-container-4 {
+  width: 100%;
+  min-height: 300px;
+  max-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+/* Estilo para la sección de bebidas sin alcohol (div4) */
+.div4 {
+  grid-column: 5 / span 2;
+  grid-row: 2 / span 3;
+  grid-row-start: 2;
+  min-height: 700px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* Estilo para la seccion del pie de pagina (div5) */
+.div5 {
+  grid-column: 1 / span 6;
+  grid-row-start: 5;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para el logo de GitHub */
+.div5 a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.div5 svg {
+  width: 30px; 
+  height: 30px;
+  margin-left: 10px; 
+  transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+/* Efecto hover para el logotipo de GitHub */
+.div5 a:hover svg {
+  transform: scale(1.2); 
+  filter: brightness(1.2); 
+}
+
+/* Estilo para el texto en el pie de página */
+.div5 h4 {
+  margin: 0;
+}
+/* Fondo */
+body {
+  background-color: #d9e1e8; 
+}
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .div1, .div2, .div3, .div4, .div5 {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  #button-container-2 button,
+  #button-container-3 button,
+  #button-container-4 button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .div5 {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
