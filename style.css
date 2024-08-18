@@ -74,19 +74,50 @@
 #button-container-4 button:hover {
   background-color: #0056b3;
 }
+/* Asegura que el título tenga suficiente espacio y se vea correctamente */
+#drink-info-container-2 h3,
+#drink-info-container-3 h3,
+#drink-info-container-4 h3 {
+  margin: 0;
+  padding: 15px 0;
+  font-size: 1.6em;
+  text-align: center;
+  color: #333;
+}
 /* Estilo para los contenedores de información de las bebidas */
 #drink-info-container-2,
 #drink-info-container-3,
 #drink-info-container-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
   min-height: 300px;
   max-height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   padding-top: 20px;
+  overflow: auto;
 }
+/* Barra de desplazamiento */
+#drink-info-container-2::-webkit-scrollbar,
+#drink-info-container-3::-webkit-scrollbar,
+#drink-info-container-4::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra de desplazamiento */
+}
+/* Pulgar de la barra de desplazamiento */
+#drink-info-container-2::-webkit-scrollbar-thumb,
+#drink-info-container-3::-webkit-scrollbar-thumb,
+#drink-info-container-4::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* Color del pulgar */
+  border-radius: 10px; /* Bordes redondeados */
+}
+/* Canal de la barra de desplazamiento */
+#drink-info-container-2::-webkit-scrollbar-track,
+#drink-info-container-3::-webkit-scrollbar-track,
+#drink-info-container-4::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Color del canal */
+}
+
 /* Estilo para la sección de bebidas sin alcohol (div4) */
 .div4 {
   grid-column: 5 / span 2;
