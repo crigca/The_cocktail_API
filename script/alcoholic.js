@@ -1,3 +1,4 @@
+
 // DIV_2 Crear elementos y funciones para bebidas alcoholicas
 let alcoholicDrinksBtn = document.createElement("button");
 alcoholicDrinksBtn.textContent = "Bebidas alcoholicas";
@@ -31,7 +32,7 @@ alcoholicDrinksBtn.addEventListener("click", async function () {
 });
 
 // Funcion que muestra la informacion completa de la bebida
-function displayDrinkInfo(drink) {
+ function displayDrinkInfo(drink) {
   let ingredientsHTML = "";
   for (let i = 1; i <= 15; i++) {
     let ingredient = drink[`strIngredient${i}`];
@@ -40,6 +41,8 @@ function displayDrinkInfo(drink) {
       ingredientsHTML += `${measure ? measure + " " : ""}${ingredient}<br>`;
     }
   }
+
+
   alcoholicInfoContainer.innerHTML = `
   <h3>${drink.strDrink}</h3>
   <img src="${drink.strDrinkThumb}" alt="${drink.strDrink}" style="max-width: 200px;">
