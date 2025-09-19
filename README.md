@@ -45,7 +45,8 @@ No se requiere instalación de dependencias adicionales.
 
 ## 🌐 Demo
 
-*Si tienes una demo en línea, agrega aquí el enlace para acceso rápido.*
+https://thecocktailapi.netlify.app/
+
 
 ## 🧰 Tecnologías utilizadas
 
@@ -64,3 +65,4 @@ Este proyecto no tiene licencia explícita.
 - Íconos de GitHub por su logotipo SVG.
 
 ---
+
